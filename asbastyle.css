@@ -1,0 +1,196 @@
+.image{
+    width: 900px;
+    height: 100%;
+    background-image: url('pexels-photo-257875.jpeg');
+    background-size: auto;
+    background-repeat: no-repeat;
+    float: left;
+}
+.inscription{
+    float: right;
+    margin-top: 100px;
+    margin-right: 25px;
+    box-shadow:0px 0px 20px #000;
+    padding: 26px;
+    height: 500px;
+    width: 400px;
+}
+.p1{
+    font-size: 20px;
+    font-family: Times New Roman;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1350px)
+{
+   #tete{
+    display: none;
+    }   
+    
+}
+
+@media screen and (max-width: 1340px)
+{
+  .image{
+    width: 800px;
+    
+    }
+    .inscription{
+    margin-top: 50px;
+    margin-right: 25px;
+}
+    
+}
+
+@media screen and (max-width: 1230px)
+{
+  .image{
+    width: 600px;
+    
+    }
+    .inscription{
+    margin-top: 50px;
+    margin-right: 25px;
+}
+    
+}
+
+@media screen and (max-width: 1050px)
+{
+  .image{
+    width: 500px;
+    background-size: 200%;
+    
+    }
+    .inscription{
+    margin-top: 50px;
+    margin-right: 25px;
+    width: 370px;
+}
+    
+}
+@media screen and (max-width: 900px)
+{
+  .image{
+    width: 400px;
+    background-image:url('budapest-138976_1920.jpg');
+    background-size: 290%;
+    
+    }
+    .inscription{
+    margin-top: 50px;
+    margin-right: 25px;
+    width: 370px;
+}
+    
+}
+
+@media screen and (max-width: 800px)
+{
+  .image{
+    width: 300px;
+    background-image:url('budapest-138976_1920.jpg');
+    background-size: 400%;
+    
+    }
+    .inscription{
+    margin-top: 50px;
+    margin-right: 25px;
+    width: 370px;
+}
+    
+}
+
+@media screen and (max-width: 700px)
+{
+  .image{
+   display: none;
+    
+    }
+    .inscription{
+        float: none;
+    margin-top: 50px;
+    margin-right: 25px;
+    margin-left: 100px;
+    width: 470px;
+}
+    
+}
+
+@media screen and (max-width: 600px)
+{
+    .inscription{
+    margin-right: 25px;
+    margin-left: 50px;
+    width: 300px;
+}
+     
+}
+
+@media screen and (max-width: 500px)
+{
+    .inscription{
+    margin-right: 25px;
+    margin-left: 50px;
+    width: 300px;
+}  
+    
+}
+
+@media screen and (max-width: 400px)
+{
+    .inscription{
+    margin-right: -100px;
+    margin-left: 10px;
+    width: 285px;
+}  
+    
+}
+:focus{outline: none;}
+
+input{font: 15px/24px "Lato", Arial, sans-serif; color: #333; width: 300px; box-sizing: border-box; letter-spacing: 1px;}
+@media screen and (max-width: 600px)
+{
+    input{
+        width: 250px
+    }
+    label{
+        font-size: 13px;
+    }
+    
+}
+@media screen and (max-width: 500px)
+{
+    input{
+        width: 250px
+    }
+    label{
+        font-size: 13px;
+    }
+    
+}
+.col-3{  margin: 40px 3%; position: relative;} /* necessary to give position: relative to parent. */
+
+ 
+.effect-18{border: 0; padding: 4px 0; border-bottom: 1px solid #ccc; background-color: transparent;}
+
+.effect-18 ~ .focus-border{position: absolute; bottom: 0; left: 0; width: 300px; height: 2px; z-index: 99;}
+.effect-18 ~ .focus-border:before, 
+.effect-18 ~ .focus-border:after{content: ""; position: absolute; bottom: 0; left: 0; width: 0; height: 100%; background-color: #3399FF; transition: 0.4s;}
+.effect-18 ~ .focus-border:after{left: auto; right: 0;}
+.effect-18:focus ~ .focus-border:before, 
+.effect-18:focus ~ .focus-border:after,
+.has-content.effect-18 ~ .focus-border:before,
+.has-content.effect-18 ~ .focus-border:after{width: 50%; transition: 0.4s;}
+.effect-18 ~ label{position: absolute; left: 0; width: 300px; top: 9px; color: #aaa; transition: 0.3s; z-index: -1; letter-spacing: 0.5px;}
+.effect-18:focus ~ label, .has-content.effect-18 ~ label{top: -16px; font-size: 12px; color: #3399FF; transition: 0.3s;}
+
+@media screen and (max-width: 400px)
+{
+    .col-3{
+    margin-right: -15px;
+    margin-left: -18px;
+ 
+}  
+    
+}

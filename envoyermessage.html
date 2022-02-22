@@ -1,0 +1,13 @@
+<html>
+<head>  <title><?php echo $_SESSION['numero'];?></title> 
+<link rel="stylesheet" href="asbastyle.css">
+</head>
+<body>
+<div class="message" style="display:none;" id="messa">
+ <form method="post" action="send.php" id="formcom">
+            <textarea name="message" required> </textarea><br><br>
+            <button type="file" class="fleche" required/><img src="fleche.png"> </button>
+            </form>
+</div>
+</body>
+</html>

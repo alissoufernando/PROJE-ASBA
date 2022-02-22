@@ -1,0 +1,2 @@
+
+<a href="voirecommentaire.php?idpublithelapublicationofday=<?php echo $donnees['id'];?>&nompublication=namedelapersonnebodytheperninenceofffsegeggdgf8818855556556565"><img src="publication/<?php echo $donnees['message'];?>" class="monimage5" height="auto" style="margin-top:2px;margin-bottom: -25px;" id="ima"/></a>

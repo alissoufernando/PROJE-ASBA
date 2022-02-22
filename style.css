@@ -1,0 +1,22 @@
+footer{
+	background:#2ba0db;
+	width:100%;
+	position:absolute;
+	top:100%;
+	
+}
+#menu-holder{
+float:left;	
+}
+.adroite {
+	float:right;
+	padding-top:10px;
+	padding-right:10px;
+	font-size:15px;
+}
+footer a{
+	color:white;
+	padding-top:5px;
+	font-size:20px;
+	font-family:Harrington;
+}

@@ -1,0 +1,18 @@
+.principal{
+	width:auto;
+	
+}
+span{
+	float:right;
+}
+strong{
+	margin-bottom:30px;
+	margin-top:30px;
+}
+strong:hover{
+	background:rgba(10, 10, 10,0.5);
+	cursor:pointer;
+	transition:0.45s;
+	border-radius:10px;
+	width:100px;
+}

@@ -1,0 +1,22 @@
+<button id="affiche">Faire apparaître les lignes paires</button>
+<button id="cache">Faire disparaître les lignes paires</button><br/>
+<ul id="affiche">
+	<li><a href="Acceuil.php"> <img src="image/home_32.png" width="25" height="25"/> Acceuil </a></li>
+			<li><a href="essai.php"/> <img src="image/home_32.png" width="25" height="25"/> Filière </a></li>
+			 <li><a href="profil.php"> <img src="image/home_32.png" width="20" height="20"/> Résultats </a></li> 
+             <li><a href="online.php"> <img src="image/home_32.png" width="20" height="20"/> Contacts</a></li>
+             <li><a href="inline.php"> <img src="image/home_32.png" width="20" height="20"/> Galerie</a></li>
+             <li><a href="amis.php"> <img src="image/home_32.png" width="20" height="20"/> Atelier </a></li>
+			</ul>
+			<p> Notre Dieu est vivant et il le sera toujours encore et encore </p>
+<script src="jquery.js"></script>
+<script>
+$(function() {
+$('#affiche').click(function() {
+$('li').show('slow');
+});
+$('#cache').click(function() {
+$('li').hide(1000);
+});
+});
+</script>

@@ -1,0 +1,30 @@
+body{
+	background-color:#E9C9B1;
+}
+.paragraphe img{border-raduis:25px;width:110PX;height:90PX;}
+.document{
+	width:1000px;
+	height:auto;
+	background-color:white;
+	border-raduis:20px;
+	position:absolute;
+	left:125px;
+	color:#000000;
+    font-size:20px;
+    text-align:justify;
+	
+}
+.document h1{
+	font:30px OCR A Std;
+	color:#C60800;
+	text-align:center;
+	
+}
+.electricite{
+	margin-left:10px;
+	
+}
+p{
+margin-left:10px;
+margin-right:10px;
+}

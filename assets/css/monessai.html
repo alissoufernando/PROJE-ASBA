@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Infinite Scroll</title>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+ 
+$(document).ready(function(){ // Quand le document est complètement chargé
+ 
+	var load = false; // aucun chargement de commentaire n'est en cours
+ 
+	/* la fonction offset permet de récupérer la valeur X et Y d'un élément
+	dans une page. Ici on récupère la position du dernier div qui 
+	a pour classe : ".commentaire" */
+	var offset = $('.commentaire:last').offset(); 
+ 
+	$(window).scroll(function(){ // On surveille l'évènement scroll
+ 
+		/* Si l'élément offset est en bas de scroll, si aucun chargement 
+		n'est en cours, si le nombre de commentaire affiché est supérieur 
+		à 5 et si tout les commentaires ne sont pas affichés, alors on 
+		lance la fonction. */
+		if((offset.top-$(window).height() <= $(window).scrollTop()) 
+		&& load==false && ($('.commentaire').size()>=5) && 
+		($('.commentaire').size()!=$('.nb_com').text())){
+ 
+			// la valeur passe à vrai, on va charger
+			load = true;
+ 
+			//On récupère l'id du dernier commentaire affiché
+			var last_id = $('.commentaire:last').attr('id');
+ 
+			//On affiche un loader
+			$('.loadmore').show();
+ 
+			//On lance la fonction ajax
+			$.ajax({
+				url: './ajax_comment.php',
+				type: 'get',
+				data: 'last='+last_id,
+ 
+				//Succès de la requête
+				success: function(data) {
+ 
+					//On masque le loader
+					$('.loadmore').fadeOut(500);
+					/* On affiche le résultat après
+					le dernier commentaire */
+					$('.commentaire:last').after(data);
+					/* On actualise la valeur offset
+					du dernier commentaire */
+					offset = $('.commentaire:last').offset();
+					//On remet la valeur à faux car c'est fini
+					load = false;
+				}
+			});
+		}
+ 
+ 
+	});
+ 
+});
+ 
+</script>
+<style>
+body{
+background:#ffffff;
+}
+/* Juste pour l'affichage, aucun intérêt ici ;) */
+</style>
+</head>
+ 
+<body>
+<div class="article">
+	<div class="nb_com">
+		25
+	</div> commentaires
+	<br /><br />
+	Un article par exemple...
+</div>
+<div class="cont_com">
+	Les commentaires sur l'article : 
+ 
+	<?php
+	$sql=mysql_query("SELECT * FROM commentaires ORDER BY id DESC LIMIT 5");
+	while($data=mysql_fetch_assoc($sql))
+	{
+		// On affiche les commentaires avec l'ID comme attribut du div
+	?>
+		<div class="commentaire" id="<?php echo $data['id']?>">
+			<?php echo $data['text_com']; ?>
+		</div>
+	<?php
+	}
+	?>
+ 
+	<div class="loadmore">
+		Chargement en cours...
+	</div>
+</div>
+</body>
+ 
+</html>

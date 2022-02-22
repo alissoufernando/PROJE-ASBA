@@ -1,0 +1,139 @@
+.sauvegarder_un_contact{
+    border-radius: 9px;
+    margin-left: 10px;
+    width: 500px;
+    height: auto;
+    background-image: url('pexels-photo-370470.jpeg');
+    background-size:100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    float: left;
+}
+input[type="tel"],input[type="text"],input[type="number"],input[type="email"]{
+transition:1s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 50px;
+    border-radius: 8px;
+    border:none;
+    font-family: forte;
+}
+.les_contacts_sauvegarder{
+    float: right;
+    border-radius: 10px;
+    width:600px;
+    height: 900px;
+    overflow: auto;
+    
+}
+.button1{
+	transition:0.3s;
+	width:150px;
+	height:40px;
+	background:#b76959;
+	border:4px solid #b76959;
+	border-radius:8px;
+	font-size:20px;
+	margin-bottom: 10px;
+}
+.p3{
+    color: #fff;
+    font-family: forte;
+    font-size: 30px;
+}
+input:focus{
+    background: rgba(253,253,253,0.3);
+    transition:1s;
+}
+::-webkit-input-placeholder{
+    font-size: 16px;
+    font-family: forte;
+}
+    .input-file-container {
+  position: relative;
+  width: 225px;
+} 
+.js .input-file-trigger {
+  display: block;
+  padding: 14px 45px;
+  background: #39D2B4;
+  color: #fff;
+  font-size: 1em;
+  transition: all .4s;
+  cursor: pointer;
+}
+.js .input-file {
+  position: absolute;
+  top: 0; left: 0;
+  width: 225px;
+  opacity: 0;
+  padding: 14px 0;
+  cursor: pointer;
+}
+.js .input-file:hover + .input-file-trigger,
+.js .input-file:focus + .input-file-trigger,
+.js .input-file-trigger:hover,
+.js .input-file-trigger:focus {
+  background: #34495E;
+  color: #39D2B4;
+}
+
+.file-return {
+  margin: 0;
+}
+.file-return:not(:empty) {
+  margin: 1em 0;
+}
+.js .file-return {
+  font-style: italic;
+  font-size: .9em;
+  font-weight: bold;
+}
+.js .file-return:not(:empty):before {
+  content: "Selected file: ";
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* Useless styles, just for demo styles */
+
+body {
+  font-family: "Open sans", "Segoe UI", "Segoe WP", Helvetica, Arial, sans-serif;
+  color: #7F8C9A;
+  background: #FCFDFD;
+}
+
+.txtcenter {
+  margin-top: 4em;
+  font-size: .9em;
+  text-align: center;
+  color: #aaa;
+}
+.copy {
+  margin-top: 2em;
+}
+.copy a {
+  text-decoration: none;
+  color: #1ABC9C;
+}
+.photo{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.nom,.conatct,.email{
+    margin-right: 10px;
+    font-family: forte;
+    font-size: 16px;
+}
+.afficher{
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background: url('wedding-322034_960_720.jpg');
+    background-size: 100%;
+    color:#fff;
+}

@@ -1,0 +1,24 @@
+#principal{
+	text-align:justify;
+	width:300px;
+	
+}
+#intendant{
+	background-color: rgba(24,24,24,0.8);
+}
+.avatar{
+	border-radius:40px;
+	margin:0px;
+}
+h4, h5{
+	margin:3.5px;
+}
+section{
+	color:silver;
+	margin-left:20px;
+	display:inline-block;
+}
+p{
+	font-size:1em;
+	font-family:Comic Sans MS;
+}

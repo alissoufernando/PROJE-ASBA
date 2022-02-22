@@ -1,0 +1,1 @@
+<p style="color: #000;">Pas de commentaire disponible</p>

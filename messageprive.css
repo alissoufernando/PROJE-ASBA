@@ -1,0 +1,19 @@
+.textarea{
+    width: 500px;
+    border: 5px double silver;
+    border-radius: 15px;
+    height: 70px;
+    font-family: forte;
+    font-size: 15;
+    font-color:red;
+}
+.input1{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid blue;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    
+}
